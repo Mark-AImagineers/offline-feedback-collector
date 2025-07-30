@@ -1,0 +1,15 @@
+{% extends 'layout/base-public.html' %}
+{% block title %}Collect Feedback Instantly{% endblock %}
+
+{% block content %}
+<section class="py-5 text-center">
+  <div class="container">
+    <h1 class="display-4 fw-bold">Collect Customer Feedback in Seconds</h1>
+    <p class="lead mb-4">
+      No apps. No hassle. Just scan a QR code and let your customers tell you what they really think.
+    </p>
+    <a href="{% url 'register' %}" class="btn btn-primary btn-lg me-2">Get Started Free</a>
+    <a href="{% url 'login' %}" class="btn btn-outline-secondary btn-lg">Login</a>
+  </div>
+</section>
+{% endblock %}
