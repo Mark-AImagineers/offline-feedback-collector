@@ -1,0 +1,4 @@
+.accordion-button[aria-expanded="true"] i {
+  transform: rotate(180deg);
+  transition: transform 0.2s ease;
+}
