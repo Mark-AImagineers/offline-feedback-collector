@@ -1,5 +1,4 @@
 {% load static %}
-{% load sass_tags %}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -37,10 +36,10 @@
     <!-- Bootstrap css-->
     <link rel="stylesheet" type="text/css" href="{% static 'assets/css/vendors/bootstrap.css' %}">
     <!-- App css-->
-    <link rel="stylesheet" type="text/css" href="{% sass_src 'assets/scss/style.scss' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/scss/style.scss' %}">
     <link id="color" rel="stylesheet" href="{% static 'assets/css/color-1.css' %}" media="screen">
     <!-- Responsive css-->
-    <link rel="stylesheet" type="text/css" href="{% sass_src 'assets/scss/responsive.scss' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/scss/responsive.scss' %}">
   </head>
   <body>
 
