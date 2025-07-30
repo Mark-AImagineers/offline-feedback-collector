@@ -8,11 +8,6 @@
     <div class="col-12 col-sm-10 col-md-6">
       <div class="login-card login-dark">
         <div>
-          <div class="text-center mb-4">
-            <a class="logo" href="/">
-              <img class="img-fluid for-light" src="{% static 'assets/images/logo/logo_dark.png' %}" alt="logo">
-            </a>
-          </div>
           <div class="login-main">
             <form class="theme-form" method="post">
               {% csrf_token %}
@@ -42,7 +37,7 @@
 
               <p class="text-center mb-0">
                 Already have an account?
-                <a href=#>Sign in</a>
+                <a href="{% url 'login' %}">Sign in</a>
               </p>
             </form>
           </div>

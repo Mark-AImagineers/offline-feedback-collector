@@ -5,13 +5,21 @@ This document logs all meaningful code changes, grouped by semantic version and 
 
 ---
 
-## v0.1.0
+## [v0.2.0] 2025-07-30
 
-### 2025-07-30
-- Created README.md to describe the project
-- Wrote AGENT.md to define the app's role and AI behavior rules
-- Defined rules for semantic versioning, changelog, and version.json
-- Added structure for changelog roadmap
+### Added
+- Extracted and integrated Yuri theme’s `static/` and `templates/` into project  
+- Configured Docker Compose with Django web service and PostgreSQL database  
+- Moved `SECRET_KEY` and database credentials into `.env`, loaded via `python-dotenv`  
+- Enabled version-driven `DEBUG` flag by reading `environment` from `version.json`  
+- Switched from SQLite to PostgreSQL in `settings.py` using env vars  
+- Created `users` app with custom `EmailUser` model (email-based authentication)  
+- Built full registration flow:  
+  - `RegistrationForm`, `RegisterView`, `/register/` route  
+  - `register.html` template extending `base-other-page.html` with themed card layout  
+- Built full login flow:  
+  - `UserLoginView`, `/login/` route  
+  - `login.html` template matching theme styling
 
 
 ## 🧭 Build RoadMap
@@ -35,5 +43,7 @@ This section maps the full project journey — all core components we plan to bu
 - Document versioning, agent behavior, and changelog rules
 - Containerize the app with Docker (planned)
 - Add a read-only `/version/` endpoint (planned)
+- Add JWT token handling (Hybrid, keep it stateful)
+- Add Password Reset
 
 This list will expand or shift as the project evolves.
