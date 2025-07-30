@@ -5,7 +5,7 @@ This document logs all meaningful code changes, grouped by semantic version and 
 
 ---
 
-## [v0.2.0] 2025-07-30
+## [v0.3.0] 2025-07-30
 
 ### Added
 - Extracted and integrated Yuri theme’s `static/` and `templates/` into project  
@@ -20,6 +20,19 @@ This document logs all meaningful code changes, grouped by semantic version and 
 - Built full login flow:  
   - `UserLoginView`, `/login/` route  
   - `login.html` template matching theme styling
+- Introduced `base-public.html` layout for all public‐facing pages (navbar with logo, login/register links, and footer)  
+- Created `landing.html` extending `base-public.html`  
+  - Built Hero section with headline, subtext, and “Get Started” / “Login” CTAs  
+- Updated `core/urls.py` to route `/` to `landing.html`  
+- Added “How It Works” section (three steps: Generate QR, Scan & Respond, View Insights)  
+- Integrated Feather icons correctly:  
+  - Included `feather.min.js` and `feather-icon.js` in `base-public.html`  
+  - Initialized with `feather.replace()`  
+  - Applied `text-primary` class for visible icon color on light background
+
+### Fixed
+- JS code for bootstrap to call from official link
+- Bootstrap code in Landing to fix icon colors
 
 
 ## 🧭 Build RoadMap

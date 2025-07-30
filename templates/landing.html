@@ -2,6 +2,7 @@
 {% block title %}Collect Feedback Instantly{% endblock %}
 
 {% block content %}
+<!-- Hero -->
 <section class="py-5 text-center">
   <div class="container">
     <h1 class="display-4 fw-bold">Collect Customer Feedback in Seconds</h1>
@@ -10,6 +11,36 @@
     </p>
     <a href="{% url 'register' %}" class="btn btn-primary btn-lg me-2">Get Started Free</a>
     <a href="{% url 'login' %}" class="btn btn-outline-secondary btn-lg">Login</a>
+  </div>
+</section>
+
+<!-- How it works -->
+ <section id="how-it-works" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-5">How It Works</h2>
+    <div class="row">
+      <div class="col-md-4 text-center mb-4">
+        <div class="mb-3">
+          <i data-feather="codesandbox" class="text-black mb-3" width="48" height="48"></i>
+        </div>
+        <h5>Generate Your QR</h5>
+        <p class="text-primary" >Create a unique QR code for each branch in seconds.</p>
+      </div>
+      <div class="col-md-4 text-center mb-4">
+        <div class="mb-3">
+          <i data-feather="smartphone" class="text-black mb-3" width="48" height="48"></i>
+        </div>
+        <h5>Customers Scan & Respond</h5>
+        <p class="text-primary">No apps or logins—customers just scan and answer a quick survey.</p>
+      </div>
+      <div class="col-md-4 text-center mb-4">
+        <div class="mb-3">
+          <i data-feather="bar-chart-2" class="text-black mb-3" width="48" height="48"></i>
+        </div>
+        <h5>View Insights</h5>
+        <p class="text-primary">See real-time feedback summaries and export data as CSV.</p>
+      </div>
+    </div>
   </div>
 </section>
 {% endblock %}
