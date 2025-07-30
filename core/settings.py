@@ -15,6 +15,8 @@ try:
 except Exception as e:
     raise RuntimeError("Failed to load environment from version.json") from e
 
+DEBUG = ENVIRONMENT == "local"
+
 SECRET_KEY = os.getenv('SECRET_KEY')
 
 ALLOWED_HOSTS = []
