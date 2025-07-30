@@ -1,0 +1,58 @@
+{% load static %}
+{% load sass_tags %}
+
+<div class="col-xl-6">
+    <div class="card title-line">
+      <div class="card-header"> 
+        <h2>Default Calendar</h2>
+      </div>
+      <div class="card-body card-wrapper"> 
+        <div class="row g-3">
+          <div class="col-12">
+            <div class="input-group main-inline-calender">
+              <input class="form-control mb-2" id="inline-calender" type="date">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-xl-6">
+    <div class="card title-line">
+      <div class="card-header"> 
+        <h2>Bootstrap Calendar</h2>
+      </div>
+      <div class="card-body card-wrapper timepicker-wrapper">
+        <div class="row">
+          <label class="col-md-3 col-form-label">Date and time</label>
+          <div class="col-md-9">
+            <input class="form-control digits" id="example-datetime-local-input" type="datetime-local" value="2023-05-03T18:45:00">
+          </div>
+        </div>
+        <div class="row">
+          <label class="col-md-3 col-form-label">Date</label>
+          <div class="col-md-9">
+            <input class="form-control digits" type="date" value="2023-05-01">
+          </div>
+        </div>
+        <div class="row">
+          <label class="col-md-3 col-form-label">Month</label>
+          <div class="col-md-9">
+            <input class="form-control digits" type="month" value="2023-01">
+          </div>
+        </div>
+        <div class="row">
+          <label class="col-md-3 col-form-label">Week</label>
+          <div class="col-md-9">
+            <input class="form-control digits" type="week" value="2023-W09">
+          </div>
+        </div>
+        <div class="row">
+          <label class="col-md-3 col-form-label">Time</label>
+          <div class="col-md-9">
+            <input class="form-control digits" type="time" value="21:45:00">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

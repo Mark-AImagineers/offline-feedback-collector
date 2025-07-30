@@ -1,0 +1,7 @@
+{
+  "name": "offline-feedback",
+  "version": "0.1.0",
+  "environment": "local",
+  "release_date": "2025-07-30",
+  "release_notes": "Initial project setup. Created README, AGENTS.md, versioning rules, and changelog roadmap."
+}

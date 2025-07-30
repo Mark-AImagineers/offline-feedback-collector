@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load sass_tags %}
+    
+   
+{% block content %}
+
+<div class="page-body">
+  {% include 'general/dashboard/ecommerce/components/top.html' %}
+</div>      
+
+{% endblock content %}
+
+{% block scriptcontent %}
+
+  <script src="{% static 'assets/js/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'assets/js/chart/apex-chart/apex-chart.js' %}"></script>
+  <script src="{% static 'assets/js/chart/apex-chart/stock-prices.js' %}"></script>
+  <script src="{% static 'assets/js/counter/jquery.waypoints.min.js' %}"></script>
+  <script src="{% static 'assets/js/counter/jquery.counterup.min.js' %}"></script>
+  <script src="{% static 'assets/js/counter/counter-custom.js' %}"></script>
+  <script src="{% static 'assets/js/datatable/simple-datatable.js' %}"></script>
+  <script src="{% static 'assets/js/timer.js' %}"></script>
+  <script src="{% static 'assets/js/dashboard/dashboard_2.js' %}"></script>
+  
+  {% endblock %}
+    

@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load sass_tags %}
+
+
+{% block css %}
+<link rel="stylesheet" type="text/css" href="{% static 'assets/css/vendors/whether-icon.css' %}">
+{% endblock css %}
+
+{% block content %}
+
+{% include 'general/dashboard/default/components/loader.html' %}
+
+    <!-- tap on top starts-->
+    <div class="tap-top"><i data-feather="chevrons-up"></i></div>
+    <!-- tap on tap ends-->
+   
+    <div class="page-body">
+      {% include 'components/icons/whether/components/whether-icon.html' %}
+    </div>
+
+{% endblock %}
+  
+{% block scriptcontent %}
+
+<script src="{% static 'assets/js/notify/bootstrap-notify.min.js' %}"></script>
+<script src="{% static 'assets/js/icons/icons-notify.js' %}"></script>
+<script src="{% static 'assets/js/icons/whether-icon-clipart.js' %}"></script>
+
+{% endblock %}  

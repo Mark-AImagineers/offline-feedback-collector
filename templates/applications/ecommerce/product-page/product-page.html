@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load sass_tags %}
+
+
+{% block css %}
+<link rel="stylesheet" type="text/css" href="{% static 'assets/css/vendors/owlcarousel.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'assets/css/vendors/rating.css' %}">
+{% endblock css %}
+
+{% block content %}
+
+{% include 'general/dashboard/default/components/loader.html' %}
+
+    <!-- tap on top starts-->
+    <div class="tap-top"><i data-feather="chevrons-up"></i></div>
+    <!-- tap on tap ends-->
+   
+    <div class="page-body">
+      {% include 'applications/ecommerce/product-page/components/product-page.html' %}
+    </div>
+
+  {% endblock %}
+
+  
+{% block scriptcontent %}
+
+<script src="{% static 'assets/js/slick/slick.min.js' %}"></script>
+<script src="{% static 'assets/js/slick/slick.js' %}"></script>
+<script src="{% static 'assets/js/header-slick.js' %}"></script>
+<script src="{% static 'assets/js/rating/jquery.barrating.js' %}"></script>
+<script src="{% static 'assets/js/rating/rating-script.js' %}"></script>
+<script src="{% static 'assets/js/owlcarousel/owl.carousel.js' %}"></script>
+<script src="{% static 'assets/js/ecommerce.js' %}"></script>
+
+{% endblock %}  
+
+
+
+    
+   
+        
+        
+    
+   

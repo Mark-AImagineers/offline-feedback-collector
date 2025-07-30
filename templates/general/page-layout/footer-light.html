@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load sass_tags %}
+
+
+{% block css %}{% endblock css %}
+
+{% block content %}
+
+{% include 'general/dashboard/default/components/loader.html' %}
+
+    <!-- tap on top starts-->
+    <div class="tap-top"><i data-feather="chevrons-up"></i></div>
+    <!-- tap on tap ends-->
+
+
+    <div class="page-body">
+      <!-- Container-fluid starts-->
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="card title-line">
+              <div class="card-header">
+                <h2>Sample Card</h2>
+                <p class="f-m-light mt-1">A sample card of the yuri theme.</p>
+              </div>
+              <div class="card-body">
+                <p>A practitioner with expertise in building attractive and useful websites is known as a web designer. Their primary objective is to create responsive websites, which can adjust to and show properly on various platforms including PCs, tablets, and mobile phones. A web designer gives considerable thought to a website's style, navigation, and general user experience to make sure the target audience will find it easy to use and visually appealing.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Container-fluid Ends-->
+    </div>
+   
+
+{% endblock %}
+
+
+{% block scriptcontent %}
+
+<script src="{% static 'assets/js/slick/slick.min.js' %}"></script>
+<script src="{% static 'assets/js/slick/slick.js' %}"></script>
+<script src="{% static 'assets/js/header-slick.js' %}"></script>
+<script src="{% static 'assets/js/tooltip-init.js' %}"></script>
+
+{% endblock %}  
+
+     
+
+
+    

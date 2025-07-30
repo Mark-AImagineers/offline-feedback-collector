@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load sass_tags %}
+
+
+{% block css %}
+<link rel="stylesheet" type="text/css" href="{% static 'assets/css/vendors/quill.snow.css' %}">
+<link rel="stylesheet" type="text/css" href="{% static 'assets/css/vendors/quill.bubble.css' %}">
+{% endblock css %}
+
+{% block content %}
+
+{% include 'general/dashboard/default/components/loader.html' %}
+
+    <!-- tap on top starts-->
+    <div class="tap-top"><i data-feather="chevrons-up"></i></div>
+    <!-- tap on tap ends-->
+    
+        <div class="page-body">
+          {% include 'miscellaneous/editors/quill-editor/components/quilleditor.html' %}
+        </div>
+
+{% endblock %}        
+
+{% block scriptcontent %}
+        
+  <script src="{% static 'assets/js/editors/quill.js' %}"></script>
+  <script src="{% static 'assets/js/custom-add-product3.js' %}"></script>
+   
+{% endblock %}    

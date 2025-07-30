@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load sass_tags %}
+    
+   
+  {% block content %}
+
+  <div class="page-body main-project">
+    {% include 'general/dashboard/project/components/top.html' %}
+  </div>      
+
+  {% endblock content %}
+
+  {% block scriptcontent %}
+
+    <script src="{% static 'assets/js/swiper/swiper-bundle.min.js' %}"></script>
+    <script src="{% static 'assets/js/chart/apex-chart/apex-chart.js' %}"></script>
+    <script src="{% static 'assets/js/chart/apex-chart/stock-prices.js' %}"></script>
+    <script src="{% static 'assets/js/chart/apex-chart/moment.min.js' %}"></script>
+    <script src="{% static 'assets/js/touchspin_2/custom_touchspin.js' %}"></script>
+    <script src="{% static 'assets/js/datatable/simple-datatable.js' %}"></script>
+    <script src="{% static 'assets/js/dashboard/dashboard_3.js' %}"></script>
+
+{% endblock %}    

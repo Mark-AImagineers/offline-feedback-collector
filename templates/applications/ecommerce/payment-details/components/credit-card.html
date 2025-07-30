@@ -1,0 +1,32 @@
+{% load static %}
+{% load sass_tags %}
+
+<!-- Individual column searching (text inputs) Starts-->
+<div class="col-xl-8 box-col-12">
+    <div class="card">
+      <div class="card-header py-4">
+        <h2>Credit Card </h2>
+      </div>
+      <div class="card-body">
+        <div class="row">
+          <div class="col-md-7 order-md-0 order-1">
+            <form class="theme-form mega-form">
+              <input class="form-control" type="number" placeholder="Card Number">
+              <input class="form-control" type="text" placeholder="First Name">
+              <input class="form-control" type="date">
+              <input class="form-control" type="text" placeholder="Name on card">
+              <select class="form-select" size="1">
+                <option>Select Type</option>
+                <option>Master</option>
+                <option>Visa</option>
+                <option>PayPal</option>
+                <option>COD</option>
+              </select>
+            </form>
+          </div>
+          <div class="col-md-5 text-center"><img class="img-fluid" src="{% static 'assets/images/ecommerce/card.png' %}" alt=""></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Individual column searching (text inputs) Ends-->

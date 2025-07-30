@@ -1,0 +1,15 @@
+{% load static %}
+{% load sass_tags %}
+
+<div class="col-auto header-right-wrapper page-title">
+    <div>
+      <h2>{{breadcrumb.child}}</h2>
+      <nav>
+        <ol class="breadcrumb justify-content-sm-start align-items-center mb-0">
+          <li class="breadcrumb-item"><a href="/index">Home</a></li>
+          <li class="breadcrumb-item f-w-500">{{breadcrumb.parent}}</li>
+          <li class="breadcrumb-item f-w-500 active">{{breadcrumb.child}}</li>
+        </ol>
+      </nav>
+    </div>
+</div>

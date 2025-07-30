@@ -1,0 +1,157 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load sass_tags %}
+
+
+{% block css %}
+<link rel="stylesheet" type="text/css" href="{% static 'assets/css/vendors/chartist.css' %}">
+{% endblock css %}
+
+{% block content %}
+
+{% include 'general/dashboard/default/components/loader.html' %}
+
+    <!-- tap on top starts-->
+    <div class="tap-top"><i data-feather="chevrons-up"></i></div>
+    <!-- tap on tap ends-->
+    
+   
+        <div class="page-body">
+          <!-- Container-fluid starts-->
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-xl-6 col-md-12 col-sm-12 box-col-12">
+                <div class="card title-line">
+                  <div class="card-header">
+                    <h2>Advanced SMIL Animations</h2>
+                  </div>
+                  <div class="card-body">
+                    <div class="ct-6 flot-chart-container"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-6 col-md-12 col-sm-12 box-col-12">
+                <div class="card title-line">
+                  <div class="card-header">
+                    <h2>SVG Path Animation</h2>
+                  </div>
+                  <div class="card-body">
+                    <div class="ct-7 flot-chart-container"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-6 col-md-12 col-sm-12 box-col-12">
+                <div class="card title-line">
+                  <div class="card-header">
+                    <h2>Animating a Donut with Svg.animate</h2>
+                  </div>
+                  <div class="card-body">
+                    <div class="ct-8 flot-chart-container"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-6 col-md-12 col-sm-12 box-col-12">
+                <div class="card title-line">
+                  <div class="card-header">
+                    <h2>Bi-polar Line Chart with Area only</h2>
+                  </div>
+                  <div class="card-body">
+                    <div class="ct-5 flot-chart-container"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-6 col-md-12 col-sm-12 box-col-12">
+                <div class="card title-line">
+                  <div class="card-header">
+                    <h2>Line Chart with Area</h2>
+                  </div>
+                  <div class="card-body">
+                    <div class="ct-4 flot-chart-container"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-6 col-md-12 col-sm-12 box-col-12">
+                <div class="card title-line">
+                  <div class="card-header">
+                    <h2>Bi-polar Bar Chart</h2>
+                  </div>
+                  <div class="card-body">
+                    <div class="ct-9 flot-chart-container"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-6 col-md-12 col-sm-12 box-col-12">
+                <div class="card title-line">
+                  <div class="card-header">
+                    <h2>Stacked Bar Chart</h2>
+                  </div>
+                  <div class="card-body">
+                    <div class="ct-10 flot-chart-container"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-6 col-md-12 col-sm-12 box-col-12">
+                <div class="card title-line">
+                  <div class="card-header">
+                    <h2>Horizontal Bar Chart</h2>
+                  </div>
+                  <div class="card-body">
+                    <div class="ct-11 flot-chart-container"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-6 col-md-12 col-sm-12 box-col-12">
+                <div class="card title-line">
+                  <div class="card-header">
+                    <h2>Extreme Responsive Configuration</h2>
+                  </div>
+                  <div class="card-body">
+                    <div class="ct-12 flot-chart-container"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-6 col-md-12 col-sm-12 box-col-12">
+                <div class="card title-line">
+                  <div class="card-header">
+                    <h2>Simple Line Chart</h2>
+                  </div>
+                  <div class="card-body">
+                    <div class="ct-1 flot-chart-container"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-6 col-md-12 col-sm-12 box-col-12">
+                <div class="card title-line">
+                  <div class="card-header">
+                    <h2>Holes in Data</h2>
+                  </div>
+                  <div class="card-body">
+                    <div class="ct-2 flot-chart-container"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-6 col-md-12 col-sm-12 box-col-12">
+                <div class="card title-line">
+                  <div class="card-header">
+                    <h2>Filled Holes in Data</h2>
+                  </div>
+                  <div class="card-body">
+                    <div class="ct-3 flot-chart-container"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Container-fluid Ends-->
+        </div>
+
+{% endblock %}        
+
+{% block scriptcontent %}
+        
+    <script src="{% static 'assets/js/chart/chartist/chartist.js' %}"></script>
+    <script src="{% static 'assets/js/chart/chartist/chartist-plugin-tooltip.js' %}"></script>
+    <script src="{% static 'assets/js/chart/chartist/chartist-custom.js' %}"></script>
+    
+{% endblock %}
+

@@ -54,4 +54,19 @@ This project is actively being built in small steps. Feedback is welcome.
 
 ## License
 
-MIT – free to use, learn from, and adapt.
+This project is open source under the **MIT License** — feel free to fork, use, remix, or build on top of it.
+If you end up using this in your own work (or business), I’d love to hear about it!
+
+## Community
+
+This is a build-in-public project — you can follow progress, give feedback, or just lurk:
+
+- 📓 See progress in [`CHANGELOG.md`](./CHANGELOG.md)
+- 🐣 Say hi on Discord: `chizz902#9538`
+- 💬 Reddit thread coming soon under [`u/chiz902`](https://www.reddit.com/user/chiz902/)
+- 💌 Email: `hello@aimagineers.io`
+
+### From the same folks who build real impact
+
+I run a studio called [AImagineers](check us out https://aimagineers.io) — where we build AI-powered systems, custom tools, and long-term tech for people solving real problems.
+While this project started as a hobby, it’ll be powered by the same principles we use in our studio work: build slow, build right, security, and build things that matter.

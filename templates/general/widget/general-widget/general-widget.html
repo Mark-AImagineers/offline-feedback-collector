@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load sass_tags %}
+    
+   
+{% block content %}
+
+<div class="page-body">
+  {% include "general/widget/general-widget/components/top.html" %}
+</div>      
+
+{% endblock content %}
+
+{% block scriptcontent %}
+  
+<script src="{% static 'assets/js/swiper/swiper-bundle.min.js' %}"></script>
+<script src="{% static 'assets/js/chart/apex-chart/apex-chart.js' %}"></script>
+<script src="{% static 'assets/js/chart/apex-chart/stock-prices.js' %}"></script>
+<script src="{% static 'assets/js/general-widget.js' %}"></script>
+<script src="{% static 'assets/js/height-equal.js' %}"></script>
+  
+{% endblock %}
+    

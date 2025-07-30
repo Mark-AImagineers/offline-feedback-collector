@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load sass_tags %}
+    
+   
+  {% block content %}
+
+  <div class="page-body">
+    {% include 'general/dashboard/default/components/container-fluid.html' %}
+  </div>      
+
+  {% endblock content %}
+
+  {% block scriptcontent %}
+    
+    <!-- Plugins JS start-->
+    <script src="{% static 'assets/js/swiper/swiper-bundle.min.js' %}"></script>
+    <script src="{% static 'assets/js/chart/apex-chart/apex-chart.js' %}"></script>
+    <script src="{% static 'assets/js/chart/apex-chart/stock-prices.js' %}"></script>
+    <script src="{% static 'assets/js/chart/apex-chart/moment.min.js' %}"></script>
+    <script src="{% static 'assets/js/notify/bootstrap-notify.min.js' %}"></script>
+    <script src="{% static 'assets/js/dashboard/default.js' %}"></script>
+    <script src="{% static 'assets/js/notify/index.js' %}"></script>
+    <script src="{% static 'assets/js/touchspin_2/custom_touchspin.js' %}"></script>
+    <script src="{% static 'assets/js/datatable/simple-datatable.js' %}"></script>
+    <script src="{% static 'assets/js/typeahead/handlebars.js' %}"></script>
+    <script src="{% static 'assets/js/typeahead/typeahead.bundle.js' %}"></script>
+    <script src="{% static 'assets/js/typeahead/typeahead.custom.js' %}"></script>
+    <script src="{% static 'assets/js/typeahead-search/handlebars.js' %}"></script>
+    <script src="{% static 'assets/js/typeahead-search/typeahead-custom.js' %}"></script>
+    <script src="{% static 'assets/js/animation/wow/wow.min.js' %}"></script>
+    <!-- Plugins JS Ends-->
+
+    {% endblock  %}
+
+    {% block script %}
+   
+    <script>
+      const datatable = new simpleDatatables.DataTable("#member-table", {
+        paging: false,
+        tabIndex: 1,
+      });
+    </script>
+    <script>new WOW().init();</script>
+
+    {% endblock %}
+
+  </body>
+</html>
