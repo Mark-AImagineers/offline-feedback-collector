@@ -2,3 +2,20 @@
   transform: rotate(180deg);
   transition: transform 0.2s ease;
 }
+
+#sidebarOverlay {
+  transition: width 0.3s ease;
+}
+
+#sidebarOverlay.collapsed {
+  width: 60px;
+}
+
+#sidebarOverlay.collapsed .logo-wrapper img {
+  max-width: 40px;
+  transition: max-width 0.3s ease;
+}
+
+#sidebarOverlay.collapsed .sidebar-link span {
+  display: none;
+}

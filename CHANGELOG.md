@@ -16,6 +16,11 @@ This document logs all meaningful code changes, grouped by semantic version and 
 ### Fixed
 - Corrected sidebar markup and overlay for responsive layout
 
+## [v0.3.3] 2025-07-31
+
+### Fixed
+- Sidebar stretches full page height and collapses uniformly
+
 ## [v0.3.0] 2025-07-30
 
 ### Added

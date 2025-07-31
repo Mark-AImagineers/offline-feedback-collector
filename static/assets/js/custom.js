@@ -1,8 +1,13 @@
 const toggleBtn = document.getElementById("sidebarToggle");
 const mobileSidebar = document.getElementById("sidebarOverlay");
+const collapseBtn = document.querySelector(".toggle-sidebar");
 
 toggleBtn?.addEventListener("click", () => {
 mobileSidebar.classList.toggle("d-none");
+});
+
+collapseBtn?.addEventListener("click", () => {
+  mobileSidebar?.classList.toggle("collapsed");
 });
 
 // Optional: close sidebar when clicking outside

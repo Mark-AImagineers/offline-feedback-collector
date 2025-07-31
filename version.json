@@ -1,7 +1,7 @@
 {
   "name": "offline-feedback",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "environment": "local",
   "release_date": "2025-07-31",
-  "release_notes": "Fixed sidebar layout structure"
+  "release_notes": "Improved sidebar collapse behavior"
 }
