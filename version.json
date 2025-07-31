@@ -1,7 +1,7 @@
 {
   "name": "offline-feedback",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "environment": "local",
   "release_date": "2025-07-31",
-  "release_notes": "Static path fixes and dev static serving"
+  "release_notes": "Fixed sidebar layout structure"
 }

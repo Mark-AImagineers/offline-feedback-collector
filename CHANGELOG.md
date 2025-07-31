@@ -11,6 +11,11 @@ This document logs all meaningful code changes, grouped by semantic version and 
 - Pointed templates to compiled CSS instead of SCSS
 - Added static file serving in development via `core.urls`
 
+## [v0.3.2] 2025-07-31
+
+### Fixed
+- Corrected sidebar markup and overlay for responsive layout
+
 ## [v0.3.0] 2025-07-30
 
 ### Added
