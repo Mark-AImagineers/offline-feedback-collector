@@ -10,7 +10,7 @@ class SubscriptionMiddleware:
     def __call__(self, request):
         user = getattr(request, "user", None)
         if user and user.is_authenticated:
-            expires = getattr(user, "subscription_expries", None)
+            expires = getattr(user, "subscription_expires", None)
             if expires and timezone.now() > expires:
                 user.subscription_level = user.SUBSCRIPTION_FREE
                 user.subscription_expires = None

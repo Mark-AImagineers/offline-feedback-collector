@@ -29,6 +29,7 @@ This document logs all meaningful code changes, grouped by semantic version and 
   - Included `feather.min.js` and `feather-icon.js` in `base-public.html`  
   - Initialized with `feather.replace()`  
   - Applied `text-primary` class for visible icon color on light background
+- Added subscription auto expire middleware
 
 ### Fixed
 - JS code for bootstrap to call from official link

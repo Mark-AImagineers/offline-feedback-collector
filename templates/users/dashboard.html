@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container py-5">
+  <h2 class="mb-4">Welcome, {{ request.user.first_name|default:request.user.email }}</h2>
+
+  <div class="row">
+    <div class="col-md-6 col-lg-4">
+      <div class="card shadow-sm mb-4">
+        <div class="card-body">
+          <h5 class="card-title">Your Branches</h5>
+          <p class="card-text">Manage your feedback collection branches.</p>
+          <a href="#" class="btn btn-primary">Go to Branches</a>
+        </div>
+      </div>
+    </div>
+    <!-- You can duplicate this card structure for other dashboard sections -->
+  </div>
+</div>
+{% endblock %}
