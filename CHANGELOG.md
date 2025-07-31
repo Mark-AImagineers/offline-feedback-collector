@@ -1,9 +1,15 @@
 # CHANGELOG.md
 
-Offline Feedback Collector  
+Offline Feedback Collector
 This document logs all meaningful code changes, grouped by semantic version and date.
 
 ---
+
+## [v0.3.1] 2025-07-31
+
+### Fixed
+- Pointed templates to compiled CSS instead of SCSS
+- Added static file serving in development via `core.urls`
 
 ## [v0.3.0] 2025-07-30
 
